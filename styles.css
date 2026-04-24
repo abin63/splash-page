@@ -129,6 +129,11 @@ input:hover {
         height: 100vh;
     }
 
+    header {
+        width: 50%;
+        min-height: 100vh;
+    }
+
     header, main {
         width: 50%;
     }
