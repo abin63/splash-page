@@ -8,7 +8,7 @@
     margin: 0 auto;
     width: 576px;
     font-family: "Roboto", sans-serif;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Header */
@@ -19,11 +19,12 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     color: #f9f9f9;
-    padding: 0 2em;
+    padding: 0 1.5em;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2rem;
     text-shadow:3px  2px grey;
 }
 
@@ -37,6 +38,7 @@ header {
 .top-text {
     order: -1;
     margin: 0 auto;
+    margin-bottom: auto;
 }
 
 .divider {
@@ -48,6 +50,7 @@ header {
 .bottom-text {
     order: 2;
     margin-bottom: 0.8em;
+    margin-top: auto;
 }
 
 h1 {
@@ -90,7 +93,6 @@ h2 {
 input {
     outline: none;
     border: 2px solid gray;
-    width: 80%;
     padding: 1em;
     margin-bottom: 1em;
     border-radius: 5px;
@@ -107,11 +109,20 @@ input:hover {
     padding: 1em;
     background-color: orange;
     color: #fff;
-    width: 80%;
     margin-bottom: 0.5em;
     border-radius: 5px;
     font-size: 1em;
     text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, #submit-btn {
+    width: 100%;
 }
 
 #submit-btn:hover,
@@ -133,7 +144,7 @@ input:hover {
     }
 
     header, main {
-        padding: 0 5em;
+        padding: 0 7em;
     }
 
     .top-text,
@@ -169,6 +180,8 @@ input:hover {
 
     #submit-btn {
         margin-top: 1em;
+        padding: 1em;
+        font-size: 1.1rem;
     }
 
 }
